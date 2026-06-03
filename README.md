@@ -2,7 +2,7 @@
 
 `google-health-remote-mcp` is an unofficial Remote MCP server project for accessing personal Google Health API data from MCP clients such as ChatGPT and Claude.
 
-The project is intentionally early-stage. This repository currently contains project guidance only; it does not implement the server yet.
+The project is intentionally early-stage. This repository currently contains project guidance, a development harness, and a minimal Remote MCP skeleton.
 
 ## Project Goal
 
@@ -78,4 +78,4 @@ MCP tools must be high-level and read-only. Each tool should expose a narrowly s
 
 ## Current Status
 
-Phase 0, the development harness, is in place. No server implementation exists yet. The next implementation milestone should be the Remote MCP skeleton described in the roadmap.
+Phase 1, the Remote MCP skeleton, is in place. It includes a minimal HTTP server, a health check endpoint, and a read-only `get_connection_status` MCP tool. Google OAuth and Google Health API calls are not implemented yet.
