@@ -86,6 +86,7 @@ PRs that add deployment material must use placeholders only and must not include
 
 Follow this order unless the roadmap is explicitly revised:
 
+0. Development harness.
 1. Remote MCP skeleton.
 2. Google OAuth design.
 3. Mocked Google Health API client.
@@ -93,3 +94,20 @@ Follow this order unless the roadmap is explicitly revised:
 5. Private deployment repository.
 
 Do not implement real Google Health API access before the OAuth design and mocked client phases are complete.
+
+## Phase 0 Guardrails
+
+Phase 0 is the development harness. It includes:
+
+- TypeScript project foundation.
+- `package.json` scripts for build, typecheck, test, lint, format, and check.
+- A test framework.
+- Linting and formatting.
+- GitHub Actions CI.
+
+Phase 0 must not include:
+
+- MCP server implementation.
+- Google OAuth implementation.
+- Google Health API calls.
+- Production secrets or real health data.
