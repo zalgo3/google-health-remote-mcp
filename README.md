@@ -48,6 +48,15 @@ MCP tools must be high-level and read-only. Each tool should expose a narrowly s
 
 ## Phased Roadmap
 
+0. **Development harness**
+   - Establish the TypeScript project foundation.
+   - Add `package.json` scripts for build, typecheck, test, lint, format, and check.
+   - Add a test framework, linting, formatting, and GitHub Actions CI.
+   - Do not implement the MCP server yet.
+   - Do not implement Google OAuth yet.
+   - Do not add Google Health API calls yet.
+   - Do not add production secrets or real health data.
+
 1. **Remote MCP skeleton**
    - Define the project structure, runtime, basic Remote MCP transport, health checks, local development commands, and test setup.
    - Keep tools mocked until authentication and data-access boundaries are designed.
@@ -69,4 +78,4 @@ MCP tools must be high-level and read-only. Each tool should expose a narrowly s
 
 ## Current Status
 
-No server implementation exists yet. The first implementation milestone should be the Remote MCP skeleton described in the roadmap.
+Phase 0, the development harness, is in place. No server implementation exists yet. The next implementation milestone should be the Remote MCP skeleton described in the roadmap.
